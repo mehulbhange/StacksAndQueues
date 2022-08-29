@@ -15,6 +15,14 @@ public class StackMain {
 
         stackOperations.show();
 
+        System.out.println("Peek :"+stackOperations.peek());
+        stackOperations.pop();
+        System.out.println("Peek :"+stackOperations.peek());
+        stackOperations.pop();
+        System.out.println("Peek :"+stackOperations.peek());
+        stackOperations.pop();
+
+        stackOperations.pop();
 
     }
 }

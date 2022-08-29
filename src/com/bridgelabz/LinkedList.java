@@ -30,4 +30,18 @@ public class LinkedList {
             System.out.println();
         }
     }
+
+    public boolean isEmpty(){
+        if ( top == null)
+            return true;
+        else
+            return false;
+    }
+
+    //This method used to remove element from list
+    public int remove(){
+        int data = top.data;
+        top = top.next;
+        return  data;
+    }
 }
