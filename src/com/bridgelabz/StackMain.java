@@ -24,5 +24,12 @@ public class StackMain {
 
         stackOperations.pop();
 
+        System.out.println("Queue operations ");
+
+        QueueOperations queueOperations = new QueueOperations();
+        queueOperations.enQueue(56);
+        queueOperations.enQueue(30);
+        queueOperations.enQueue(70);
+        queueOperations.show();
     }
 }

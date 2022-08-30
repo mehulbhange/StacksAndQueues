@@ -4,6 +4,9 @@ public class LinkedList {
     //Used to hold the head value of linked list
     Node top;
 
+    //Used to hold the rear pointer of the linked list
+    Node rear;
+
     /*
     *This method is used to add the node at begining of the linked list
     *  */
@@ -43,5 +46,18 @@ public class LinkedList {
         int data = top.data;
         top = top.next;
         return  data;
+    }
+
+    //This method is used to append the element
+    public void addNodeAtEnd(int data) {
+        Node newNode = new Node(data);
+        if (top == null){
+            top = newNode;
+            rear = newNode;
+        }else {
+            rear.next = newNode;
+            rear = rear.next;
+        }
+
     }
 }
