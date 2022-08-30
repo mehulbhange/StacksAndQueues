@@ -31,5 +31,9 @@ public class StackMain {
         queueOperations.enQueue(30);
         queueOperations.enQueue(70);
         queueOperations.show();
+        System.out.println("Dequeue : " + queueOperations.deQueue());
+        System.out.println("Dequeue : " + queueOperations.deQueue());
+        queueOperations.show();
+
     }
 }
